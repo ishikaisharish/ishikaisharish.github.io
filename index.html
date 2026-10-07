@@ -1093,6 +1093,21 @@
           </div>
         </article>
 
+        <style>
+  /* Give AIF and MyMahotsav equal widths */
+  .projects-grid > .pc--equal {
+    grid-column: span 6;
+    min-width: 0;
+  }
+
+  /* Stack them on smaller screens */
+  @media (max-width: 900px) {
+    .projects-grid > .pc--equal {
+      grid-column: 1 / -1;
+    }
+  }
+</style>
+        
         <!-- MyMahotsav Blog -->
         <article class="pc pc--third fade-in">
           <div class="pc-img" style="height:160px">
